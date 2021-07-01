@@ -15,6 +15,7 @@
 		59A3311F268D4FE500585418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A3311D268D4FE500585418 /* LaunchScreen.storyboard */; };
 		59A3312A268D4FE500585418 /* xOSStorePerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A33129268D4FE500585418 /* xOSStorePerformanceTests.swift */; };
 		59A33135268D4FE500585418 /* xOSStorePerformanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A33134268D4FE500585418 /* xOSStorePerformanceUITests.swift */; };
+		59A33144268D584800585418 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A33143268D584800585418 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		59A33130268D4FE500585418 /* xOSStorePerformanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xOSStorePerformanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A33134268D4FE500585418 /* xOSStorePerformanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xOSStorePerformanceUITests.swift; sourceTree = "<group>"; };
 		59A33136268D4FE500585418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59A33143268D584800585418 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		59A33111268D4FE300585418 /* xOSStorePerformance */ = {
 			isa = PBXGroup;
 			children = (
+				59A33142268D583900585418 /* Bench */,
 				59A33112268D4FE300585418 /* AppDelegate.swift */,
 				59A33114268D4FE300585418 /* SceneDelegate.swift */,
 				59A33116268D4FE300585418 /* ContentView.swift */,
@@ -134,6 +137,14 @@
 				59A33136268D4FE500585418 /* Info.plist */,
 			);
 			path = xOSStorePerformanceUITests;
+			sourceTree = "<group>";
+		};
+		59A33142268D583900585418 /* Bench */ = {
+			isa = PBXGroup;
+			children = (
+				59A33143268D584800585418 /* UserDefaults.swift */,
+			);
+			path = Bench;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A33144268D584800585418 /* UserDefaults.swift in Sources */,
 				59A33113268D4FE300585418 /* AppDelegate.swift in Sources */,
 				59A33115268D4FE300585418 /* SceneDelegate.swift in Sources */,
 				59A33117268D4FE300585418 /* ContentView.swift in Sources */,

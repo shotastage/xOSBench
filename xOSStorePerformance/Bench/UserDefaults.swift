@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UserDefaults.swift
 //  xOSStorePerformance
 //
 //  Created by Shota Shimazu on 2021/07/01.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UserDefaultsView: View {
     let list = ["UserDefaults", "Keychain", "CoreData", "Realm", "SQLite"]
 
     var body: some View {
@@ -20,8 +20,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UserDefaultsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UserDefaultsView()
     }
 }
