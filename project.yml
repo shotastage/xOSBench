@@ -11,14 +11,14 @@ packages:
     exactVersion: 5.4.0
 options:
   bundleIdPrefix: com.shotastage
-deploymentTarget: "13.0"
+deploymentTarget: "14.0"
 attributes:
   ORGANIZATIONNAME: "Shota Shimazu"
 targets:
   xOSBench:
     type: application
     platform: iOS
-    deploymentTarget: "13.0"
+    deploymentTarget: "14.0"
     sources:
       - xOSBench
     settings:
