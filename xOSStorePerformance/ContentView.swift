@@ -15,7 +15,7 @@ struct ContentView: View {
             List(0 ..< list.count) { item in
                 Text(list[item])
             }
-            .navigationTitle("Store Performance")
+            .navigationTitle("DB Bench")
         }
     }
 }
