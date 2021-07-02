@@ -1,0 +1,49 @@
+name: xOSBench
+packages:
+  KeychainAccess:
+    url: https://github.com/kishikawakatsumi/KeychainAccess.git
+    exactVersion: 4.2.2
+  SimpleDefaults:
+    url: https://github.com/shotastage/SimpleDefaults.git
+    branch: master
+  GRDB.swift:
+    url: https://github.com/groue/GRDB.swift.git
+    exactVersion: 5.4.0
+options:
+  bundleIdPrefix: com.shotastage
+deploymentTarget: "13.0"
+attributes:
+  ORGANIZATIONNAME: "Shota Shimazu"
+targets:
+  xOSBench:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - xOSBench
+    settings:
+      base:
+        MARKETING_VERSION: 0.1
+        CURRENT_PROJECT_VERSION: 1
+        PRODUCT_BUNDLE_IDENTIFIER: com.shotastage.xosbench
+        INFOPLIST_FILE: xOSBench/Info.plist
+        SUPPORTS_MACCATALYST: YES
+        "IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]": 14.2
+    scheme:
+      testTargets:
+        - xOSBenchTests
+        - xOSBenchUITests
+    dependencies:
+      - package: KeychainAccess
+  xOSBenchTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: xOSBenchTests
+    dependencies:
+      - target: xOSBench
+  xOSBenchUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: xOSBenchUITests
+    dependencies:
+      - target: xOSBench
