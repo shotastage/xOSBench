@@ -13,7 +13,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(0 ..< list.count) { item in
-                Text(list[item])
+                NavigationLink(
+                    destination: Text(list[item]),
+                    label: {
+                        Text(list[item])
+                    })
             }
             .navigationTitle("DB Bench")
         }
