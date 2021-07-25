@@ -35,6 +35,7 @@ targets:
         - xOSBenchUITests
     dependencies:
       - package: KeychainAccess
+      - framework: "Carthage/Build/Device.xcframework"
   xOSBenchTests:
     type: bundle.unit-test
     platform: iOS
